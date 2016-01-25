@@ -142,3 +142,19 @@ Northwest and Southwest regions.
 
 SELECT email FROM salespeople WHERE region = 'Southwest'
 OR region = 'Northwest';
+
+
+==========
+11
+
+-----
+
+Write a query that shows the emails of all salespeople from both the
+Northwest and Southwest regions, this time using an 'IN' clause.  
+
+
+-----
+
+
+SELECT email FROM salespeople
+WHERE region IN ('Southwest','Northwest');
