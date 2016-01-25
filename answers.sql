@@ -158,3 +158,20 @@ Northwest and Southwest regions, this time using an 'IN' clause.
 
 SELECT email FROM salespeople
 WHERE region IN ('Southwest','Northwest');
+
+
+==========
+12
+
+-----
+
+Write a query that shows the email, first name, and last name of all
+salespeople in either the Northwest or Southwest regions whose last names start
+with the letter 'M'.
+
+-----
+
+
+SELECT email, first_name, last_name FROM salespeople
+WHERE (region = 'Northwest' OR region = 'Southwest')
+AND last_name LIKE 'M%';
